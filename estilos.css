@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Space+Mono:wght@400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    max-height: 100vh;
+}
+.header-error h1{
+    font-family: 'Inconsolata';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 25px;
+    letter-spacing: -0.08em;
+    text-transform: uppercase;
+    color: #333333;
+
+    position: absolute;
+    width: 133px;
+    height: 25px;
+    left: 77px;
+    top: 40px;
+}
+
+.error-resultat{
+    max-width: 1500px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 4rem;
+    margin: 200px 0 0 0 ;
+
+}
+
+.error-resultat .img-error{
+    max-width: 539px;
+    width: 100%;
+    max-height: 414px;
+    min-height: 414px;
+    height: 100%;
+    margin-left: -6rem;
+}
+.error-resultat .img-error img{
+    width: 100%;
+    height: 100%;
+}
+
+.error-resultat .texts-error{
+    width: 400px;
+    max-height: 414px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.error-resultat .texts-error .control-text h2{
+    font-family: 'Space mono';
+    font-weight: 800;
+    font-style: bold;
+    font-size: 2.6rem;
+    line-height: 95px;
+    letter-spacing: -0.035em;
+    color: #333333;
+}
+.error-resultat .texts-error .control-text p{
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5rem;
+    line-height: 36px;
+    letter-spacing: -0.035em;
+
+    /* Gray 2 */
+
+    color: #4F4F4F;
+
+
+}
+
+button{
+    background: #333333;
+    padding: 1.5rem 3rem;
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: bold;
+    font-size: .8rem;
+    line-height: 21px;
+    /* identical to box height */
+
+    letter-spacing: -0.035em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+    border: none;
+}
+
+@media  screen and (max-width: 800px) {
+    body{
+        height: 1300px;
+    }
+    .error-resultat{
+        justify-content: center;
+        gap: 0;
+    }
+    .error-resultat .img-error{
+        margin: 0;
+        
+    }
+    .error-resultat {
+        height: 1200px;
+    }
+}
